@@ -1,13 +1,13 @@
 local player = game.Players.LocalPlayer
-local humanoid = player:WaitForChild("Humanoid")
-local torso = player:WaitForChild("Torso")
+local humanoid = game.Workspce:FindFirstChild("Humanoid")
+local torso = game.Workspace:FindFirstChild("Torso")
 
 if humanoid.WalkSpeed ~= 16 then
     humanoid.WalkSpeed = 16
     torso.Anchored = true
     task.wait(6)
     torso.Anchored = false
-    loadstring(player:Kick("You've been kicked for cheats / exploits."))()
+    player:Kick("You've been kicked for cheats / exploits.")
 end
 
 if humanoid.JumpPower ~= 50 then
