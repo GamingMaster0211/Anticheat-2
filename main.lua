@@ -15,5 +15,9 @@ if humanoid.JumpPower ~= 50 then
     torso.Anchored = true
     task.wait(6)
     torso.Anchored = false
-    loadstring(player:Kick("You've been kicked for cheats / exploits."))()
+    player:Kick("You've been kicked for cheats / exploits.")
+end
+
+if player:FindFirstChild() then
+
 end
